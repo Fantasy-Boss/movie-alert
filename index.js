@@ -13,14 +13,14 @@ app.use(express.json())
 
 app.get('/', async (req, res)=> {
 
-    res.sendFile('web/index.html')
+    res.sendFile(process.cwd() + 'web/index.html')
 
 })
 
 
 
 app.get('/*', async (req, res)=> {
-    res.sendFile('web/index.html')
+    res.sendFile(process.cwd() + 'web/index.html')
 })
 
 
