@@ -11,7 +11,11 @@ app.use(express.static(process.cwd()+'web'))
 app.use(express.json())
 
 
+app.get('/', async (req, res)=> {
 
+    res.sendFile(process.cwd()+'web/index.html')
+
+})
 
 
 
