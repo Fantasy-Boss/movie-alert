@@ -10,7 +10,7 @@ const api_key = "1ea9ed9374402446b6208b59da6ec46a"
 app.use(express.static(process.cwd() + '/web'))
 app.use(express.json())
 
-
+console.log(process.cwd())
 app.get('/', async (req, res)=> {
 
 
