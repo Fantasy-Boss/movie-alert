@@ -12,7 +12,7 @@ app.use(express.json())
 
 
 app.get('/', async (req, res)=> {
-
+    res.send(`${process.cwd()}/web/index.html`)
     res.sendFile(process.cwd() + '/web/index.html')
 
 })
